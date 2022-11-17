@@ -1,0 +1,57 @@
+.form-employee {
+    width: 100%;
+    position: absolute;
+    top: 108px;
+    font-size: 17px;
+    color: rgb(32, 32, 32);
+    background-color: rgb(248, 248, 246);
+    opacity: 0.7;
+    -webkit-box-shadow: 0px 0px 10px 0px rgb(99, 91, 69);
+    -moz-box-shadow: 0px 0px 10px 0px rgb(99, 91, 69);
+    box-shadow: 0px 0px 10px 0px rgb(99, 91, 69);
+    padding: 20px;
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    border: 3px solid rgb(99, 91, 69);
+}
+
+.form-employee-title {
+    color: rgb(169, 148, 102);
+}
+
+.inputs-form-employee {
+    width: 280px;
+    background-color: rgb(240, 240, 240);
+    color: rgb(29, 28, 28);
+    text-align: center;
+    border-radius: 3px;
+    padding: 3px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(250, 250, 250, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(245, 245, 245, 0.75);
+    border: 0.5px solid rgb(169, 148, 102);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-employee-btn {
+    margin: 10px;
+    width: 280px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 7px;
+    background-color: rgb(169, 148, 102);
+    color: white;
+}
+
+.form-employee-btn:hover {
+    width: 300px;
+    background-color: rgb(108, 92, 57);
+    transition: all 0.5s ease;
+}

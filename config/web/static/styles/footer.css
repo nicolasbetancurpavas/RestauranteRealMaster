@@ -1,0 +1,58 @@
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-plates {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-img {
+    width: 260px;
+}
+
+.footer-info {
+    display: flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.footer-info-ubic {
+    margin-right: 10px;
+}
+
+.footer-info-contact {
+    margin-right: 10px;
+}
+
+.footer-info-title {
+    color: rgb(137, 114, 76);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.footer-info-text {
+    color: rgb(107, 107, 107);
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+#icon-footer {
+    color: rgb(107, 107, 107);
+    font-weight: bold;
+}
+
+#icon-footer {
+    transition: all 1s ease;
+    color: rgb(137, 114, 76);
+}

@@ -1,0 +1,154 @@
+.nav-container {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    align-items: center;
+    background: rgb(249, 249, 249);
+    border-bottom: 2px solid rgb(181, 145, 86);
+}
+
+.nav-log-img {
+    width: 120px;
+    height: 90px;
+}
+
+.nav-container-items {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.nav-item {
+    margin-right: 25px;
+    text-decoration: none;
+    color: rgb(181, 145, 86);
+}
+
+.nav-item:hover {
+    color: rgb(126, 126, 126);
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.nav-container-items .flex-end {
+    position: absolute;
+    right: 20px;
+}
+
+#offcanvasRight {
+    width: 600px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+#offcanvasRightLabel {
+    width: 100%;
+    font-size: 25px;
+    color: rgb(181, 145, 86);
+}
+
+#config {
+    color: rgb(181, 145, 86);
+}
+
+.container-admin {
+    margin-bottom: 20px;
+}
+
+.admin-img {
+    width: 180px;
+    border: 2px solid rgb(181, 145, 86);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.admin-false {
+    color: rgb(126, 126, 126);
+}
+
+.container-services {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 0px;
+}
+
+.services-item-href {
+    text-decoration: none;
+    color: white;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.services-item-href:hover {
+    color: white;
+}
+
+.services-item {
+    padding: 7px;
+    background: rgb(181, 145, 86);
+    margin-right: 10px;
+    width: 190px;
+}
+
+.services-item:hover {
+    background: rgb(125, 98, 54);
+    width: 210px;
+    transition: all 0.5s ease;
+}
+
+.services-item-false {
+    padding: 7px;
+    background: rgb(70, 70, 70);
+    margin-right: 10px;
+    width: 190px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-title {
+    color: gray;
+    font-size: 25px;
+}
+
+.admin-title {
+    font-size: 25px;
+}
+
+.bi-arrow-bar-down {
+    margin-bottom: 10px;
+    color: rgb(181, 145, 86);
+}
+
+.admin-text {
+    color: grey;
+}
+
+.admin-footer {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.admi-footer-img {
+    width: 160px;
+}
+
+#btn-close {
+    background-color: rgb(250, 248, 248);
+}

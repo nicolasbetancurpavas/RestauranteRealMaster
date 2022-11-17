@@ -1,0 +1,38 @@
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.location-info {
+    width: 100%;
+    text-align: center;
+}
+
+.location-maps {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.location-info-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: rgb(137, 114, 76);
+}
+
+.location-info-btn {
+    width: 150px;
+    padding: 10px;
+    border: transparent;
+    background-color: rgb(137, 114, 76);
+    color: white;
+}
+
+.location-info-btn:hover {
+    width: 160px;
+    box-shadow: 1px 2px 1px 1px rgb(207, 205, 205);
+    transition: all 0.5s ease;
+    background-color: rgb(76, 58, 30);
+}

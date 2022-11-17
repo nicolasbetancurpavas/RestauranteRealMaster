@@ -1,0 +1,63 @@
+.follow {
+    margin-top: 70px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.folllow-img {
+    width: 310px;
+    height: 400px;
+    -webkit-box-shadow: -1px 5px 5px 0px rgba(194, 188, 194, 1);
+    -moz-box-shadow: -1px 5px 5px 0px rgba(194, 188, 194, 1);
+    box-shadow: -1px 5px 5px 0px rgba(194, 188, 194, 1);
+}
+
+.follow-container-img {
+    width: 50%;
+    padding: 10px;
+}
+
+.follow-info {
+    width: 100%;
+    text-align: center;
+}
+
+.follow-info-text {
+    color: grey;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.separate {
+    padding: 5px;
+    border-bottom: 1px solid rgb(137, 114, 76);
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.follow-info-title {
+    margin-top: 60px;
+    font-size: 22px;
+}
+
+.follow-icons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+#icon-follow {
+    color: rgb(87, 86, 86);
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+#icon-follow:hover {
+    color: rgb(137, 114, 76);
+    transition: all 0.6s ease;
+    width: 35px;
+    height: 35px;
+}

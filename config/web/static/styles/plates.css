@@ -1,0 +1,33 @@
+.plates-container {
+    margin-top: 75px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.plates-items {
+    width: 33%;
+}
+
+.plates-img {
+    width: 100%;
+}
+
+.plates-text {
+    font-size: 27px;
+    border-bottom: 2px solid rgb(181, 145, 86);
+    width: 45%;
+    margin: auto;
+}
+
+.plates-text:hover {
+    width: 55%;
+    transition: all 0.5s ease-out;
+}
+
+.swal2-popup .swal2-modal .swal2-show {
+    background-color: black;
+}
