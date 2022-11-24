@@ -1,15 +1,16 @@
-# render
+# render Py
 from django.shortcuts import render
 from web.formularios.formPlates import FormPlates
-from web.formularios.formEmploye import FormEmployee
+from web.formularios.formEmployee import FormEmployee
 
 #MODELOS (tablas)
 from web.models import Platos
 from web.models import Empleados
 
-# consultas
-from web.helpers.postPlates import saveData
-from web.helpers.getPlates import getPlates
+# Query
+from web.helpers.savePlates import savePlates
+from web.helpers.saveEmployee import saveEmployee
+from web.helpers.getData import getData
 
 
 def Home(request):
@@ -24,13 +25,14 @@ def PlatesView(request):
         'formulario': formulario,
         'flag': False,  # bandera
     }
-    saveData(request, FormPlates, data)
-    getPlates(data, Platos, 'platos')
 
-    return render(request, 'mainPlates.html', data)
+    savePlates(request, FormPlates, data)
+    getData(data, 'platos', Platos)
+
+    return render(request, 'registerPlates.html', data)
 
 
-def Employe(request):
+def EmployeView(request):
     formulario = FormEmployee()
 
     data = {
@@ -38,7 +40,35 @@ def Employe(request):
         'flag': False,  # bandera
     }
 
-    getPlates(data, Empleados, 'empleados')
+    saveEmployee(request, FormEmployee, data)
 
-    # preguntamos si existe alguna peticion tipo POST asociada a la vista
-    return render(request, 'mainEmploye.html', data)
+    return render(request, 'registerEmploye.html', data)
+
+
+def MainView(request):
+    data = {
+        'flag': False,  # bandera
+    }
+    getData(data, 'platos', Platos)
+    return render(request, 'getmain.html', data)
+
+
+def AdminPlates(request):
+
+    data = {
+        'flag': False,  # bandera
+    }
+
+    getData(data, 'platos', Platos)
+
+    return render(request, 'crudPlates.html', data)
+
+
+def AdminEmpleoyee(request):
+
+    data = {
+        'flag': False,  # bandera
+    }
+    getData(data, 'empleados', Empleados)
+
+    return render(request, 'crudEmploye.html', data)

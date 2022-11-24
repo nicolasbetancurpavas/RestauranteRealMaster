@@ -1,5 +1,5 @@
-def getPlates(data, model, newdata):
+def getData(data, dataName, model):
     # consulta a todos los datos
     query = model.objects.all()
-    data[newdata] = query
+    data[dataName] = query
     print(query)

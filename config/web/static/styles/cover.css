@@ -14,7 +14,6 @@
 }
 
 .banner-container li {
-    background-color: rgb(180, 176, 176);
     width: 100%;
     list-style: none;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
@@ -35,15 +34,40 @@
     background-color: rgb(157, 157, 157);
 }
 
-.banner-title {
+.banner-container-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     width: 400px;
-    right: 20%;
+    right: 10%;
     top: 40%;
-    font-size: 30px;
     background-color: transparent;
-    color: white;
+    color: rgb(233, 233, 233);
     z-index: 1;
+}
+
+.banner-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#icon-btn {
+    animation: movee 0.8s infinite;
+}
+
+#icon-btn:hover {
+    width: 100px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+@keyframes movee {
+    10% {
+        margin-top: 5%;
+    }
 }
 
 @keyframes change {

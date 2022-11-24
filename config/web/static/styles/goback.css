@@ -30,9 +30,11 @@
     color: white;
     width: 200px;
     margin-top: 30px;
+    font-size: 18px;
 }
 
 .go-back-info-btn:hover {
+    width: 220px;
     background-color: rgb(110, 90, 57);
     box-shadow: 2px 2px 2px rgb(188, 188, 188);
     transition: all 0.3s ease-in-out;
@@ -41,10 +43,11 @@
 .go-back-info-title {
     margin-bottom: 30px;
     margin-top: 25px;
-    font-size: 30px;
+    font-size: 26px;
+    color: rgb(169, 148, 102);
 }
 
 .go-back-info-text {
     color: grey;
-    font-size: 17px;
+    font-size: 16px;
 }

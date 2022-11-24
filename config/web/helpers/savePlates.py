@@ -1,7 +1,7 @@
 from web.models import Platos
 
 
-def saveData(request, FormPlates, data):
+def savePlates(request, FormPlates, data):
 
     if request.method == 'POST':
         # capturamos datos del formulario
@@ -11,7 +11,7 @@ def saveData(request, FormPlates, data):
             dataPlates = dataForm.cleaned_data
 
             # envio la info de los inputs al modelo
-            PlateNew = Platos(
+            newPlates = Platos(
                 nombre=dataPlates['name'],
                 descripcion=dataPlates['description'],
                 foto=dataPlates['image'],
@@ -21,7 +21,7 @@ def saveData(request, FormPlates, data):
 
             # save data platenew post bd
             try:
-                PlateNew.save()
+                newPlates.save()
                 print('exito guardando los datos')
                 data['flag'] = True
             except Exception as error:

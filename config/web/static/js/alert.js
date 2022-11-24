@@ -1,5 +1,7 @@
-Swal.fire(
-    'Exito, se guardaron los datos',
-    'dale click en el boton!',
-    'success',
-)
+Swal.fire({
+    position: 'top-center',
+    icon: 'success',
+    title: 'se guardaron los datos correctamente',
+    showConfirmButton: false,
+    timer: 3000
+})

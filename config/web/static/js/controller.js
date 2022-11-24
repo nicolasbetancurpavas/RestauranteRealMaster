@@ -2,3 +2,7 @@
 if (window.screen.availWidth < 540) {
     console.log('si sr')
 }
+// prevenimos el recargo de pagina 
+
+const button = document.getElementById('btn-form')
+button.addEventListerner('click',(e)=> e.preventDefault())

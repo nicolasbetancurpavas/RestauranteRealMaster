@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RealMaster</title>
+  <title>Registro platos</title>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
@@ -18,31 +18,42 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <link rel="stylesheet" href="../static/styles/home.css" />
-  <link rel="stylesheet" href="../static/styles/cover.css" />
   <link rel="stylesheet" href="../static/styles/nav.css" />
-  <link rel="stylesheet" href="../static/styles/goback.css" />
-  <link rel="stylesheet" href="../static/styles/plates.css" />
-  <link rel="stylesheet" href="../static/styles/followme.css" />
-  <link rel="stylesheet" href="../static/styles/specialDishes.css" />
   <link rel="stylesheet" href="../static/styles/footer.css" />
-  <link rel="stylesheet" href="../static/styles/location.css" />
+  <link rel="stylesheet" href="../static/styles/coverEmployee.css" />
+  <link rel="stylesheet" href="../static/styles/coverPlates.css" />
+  <link rel="stylesheet" href="../static/styles/formPlates.css" />
+  <link rel="stylesheet" href="../static/styles/formEmploye.css" />
+
+  <!-- sweetalert -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet" />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
 </head>
 
-<body id="body">
-  <header class="header">
-    {% include './shared/cover.html' %}
+<body>
+  <header>
+    {% include './shared/coverEmployee.html' %}
     {% include './shared/nav.html' %}
   </header>
 
-  <main class="main-container">
-    {% include './shared/goback.html' %}
-    {% include './shared/plates.html' %}
-    {% include './shared/followme.html' %}
-    {% include './shared/specialDishes.html' %}
-    {% include './shared/location.html' %}
+  {% if flag %}
+  <script src="../static/js/alert.js"></script>
+  {% endif %}
+
+  <main>
+    <section class="form-employee wow animate__animated animate__fadeInUp">
+      <form method="POST" action="" class="form-container">
+        <h2 class="form-employee-title">Registrar Empleado</h2>
+        {{ formulario }}
+        {% csrf_token %}
+        <button type="submit" class="form-plates-btn">Guardar</button>
+      </form>
+    </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer-plates">
     {% include './shared/footer.html' %}
   </footer>
 
@@ -51,12 +62,12 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 
-  <script src="../../static/js/wow.min.js"></script>
+  <script src="../static/js/wow.min.js"></script>
   <script>
     new WOW().init()
   </script>
 
-  <script src=""></script>
+  <script src="../static/js/controller"></script>
 </body>
 
 </html>

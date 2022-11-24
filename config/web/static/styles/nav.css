@@ -16,11 +16,11 @@
 .nav-container-items {
     display: flex;
     list-style: none;
-    font-size: 18px;
     font-weight: normal;
 }
 
 .nav-item {
+    font-size: 16px;
     margin-right: 25px;
     text-decoration: none;
     color: rgb(181, 145, 86);
@@ -28,7 +28,7 @@
 
 .nav-item:hover {
     color: rgb(126, 126, 126);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     transition: all 0.5s ease;
     cursor: pointer;
@@ -47,7 +47,7 @@
 
 #offcanvasRightLabel {
     width: 100%;
-    font-size: 25px;
+    font-size: 22px;
     color: rgb(181, 145, 86);
 }
 
@@ -125,12 +125,7 @@
 }
 
 .admin-title {
-    font-size: 25px;
-}
-
-.bi-arrow-bar-down {
-    margin-bottom: 10px;
-    color: rgb(181, 145, 86);
+    font-size: 22px;
 }
 
 .admin-text {
@@ -138,8 +133,6 @@
 }
 
 .admin-footer {
-    position: absolute;
-    bottom: 0px;
     display: flex;
     justify-content: center;
     width: 100%;

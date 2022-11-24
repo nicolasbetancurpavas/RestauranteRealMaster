@@ -13,36 +13,36 @@ class FormEmployee (forms.Form):
     nombre = forms.CharField(
         required=True,
         max_length=25,
-        widget=forms.TextInput(attrs={'class': 'inputs-form-employee mb-2'})
+        widget=forms.TextInput(attrs={'class': 'inputs-form-employee mb-1'})
     )
 
     apellido = forms.CharField(
         required=True,
         max_length=20,
-        widget=forms.TextInput(attrs={'class': 'inputs-form-employee mb-2'})
+        widget=forms.TextInput(attrs={'class': 'inputs-form-employee mb-1'})
     )
 
     foto = forms.CharField(
         required=True,
         max_length=20,
-        widget=forms.TextInput(attrs={'class': 'inputs-form-employee mb-2'})
+        widget=forms.TextInput(attrs={'class': 'inputs-form-employee mb-1'})
     )
 
     salario = forms.CharField(
         required=True,
         max_length=12,
-        widget=forms.NumberInput(attrs={'class': 'inputs-form-employee mb-2'})
+        widget=forms.NumberInput(attrs={'class': 'inputs-form-employee mb-1'})
     )
 
-    conctato = forms.CharField(
+    contacto = forms.CharField(
         required=True,
         max_length=20,
-        widget=forms.TextInput(attrs={'class': 'inputs-form-employee mb-2'})
+        widget=forms.NumberInput(attrs={'class': 'inputs-form-employee mb-1'})
     )
 
     cargo = forms.ChoiceField(
         required=True,
         label='',
-        widget=forms.Select(attrs={'class': 'inputs-form-employee mb-2'}),
+        widget=forms.Select(attrs={'class': 'inputs-form-employee mb-1'}),
         choices=POSITION
     )

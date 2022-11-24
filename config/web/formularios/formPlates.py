@@ -18,7 +18,7 @@ class FormPlates(forms.Form):
 
     description = forms.CharField(
         required=True,
-        max_length=50,
+        max_length=200,
         label='Description',
         widget=forms.Textarea(attrs={'class': 'form-inputs text-area mb-2'})
     )

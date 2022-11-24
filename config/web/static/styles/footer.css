@@ -8,8 +8,8 @@
 .footer-plates {
     width: 100%;
     display: flex;
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    top: 50px;
     margin-bottom: 25px;
     align-items: center;
     justify-content: center;
@@ -38,17 +38,17 @@
 .footer-info-title {
     color: rgb(137, 114, 76);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .footer-info-text {
-    color: rgb(107, 107, 107);
+    color: rgb(65, 65, 65);
     margin-right: 5px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #icon-footer {
-    color: rgb(107, 107, 107);
+    color: rgb(27, 27, 27);
     font-weight: bold;
 }
 

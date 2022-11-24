@@ -17,7 +17,7 @@
 }
 
 .location-info-title {
-    font-size: 28px;
+    font-size: 25px;
     margin-bottom: 20px;
     color: rgb(137, 114, 76);
 }
@@ -28,10 +28,11 @@
     border: transparent;
     background-color: rgb(137, 114, 76);
     color: white;
+    font-size: 18px;
 }
 
 .location-info-btn:hover {
-    width: 160px;
+    width: 165px;
     box-shadow: 1px 2px 1px 1px rgb(207, 205, 205);
     transition: all 0.5s ease;
     background-color: rgb(76, 58, 30);
