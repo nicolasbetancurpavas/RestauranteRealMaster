@@ -1,0 +1,20 @@
+.support {
+    position: fixed;
+    top: 90vh;
+    right: 15px;
+    z-index: 2;
+}
+
+.item-support {
+    margin-bottom: 30px;
+}
+
+.bi-arrow-up-circle {
+    color: rgb(115, 95, 44);
+}
+
+#top:hover {
+    color: grey;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}

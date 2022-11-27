@@ -2,7 +2,7 @@
 if (window.screen.availWidth < 540) {
     console.log('si sr')
 }
-// prevenimos el recargo de pagina 
 
-const button = document.getElementById('btn-form')
-button.addEventListerner('click',(e)=> e.preventDefault())
+let toping = document.getElementById('support')
+
+toping.addEventListener('click', () => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })) 

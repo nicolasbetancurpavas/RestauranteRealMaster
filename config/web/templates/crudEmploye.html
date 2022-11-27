@@ -11,17 +11,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Signika+Negative&display=swap"
-    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rosarivo&display=swap" rel="stylesheet">
   <!-- Animate -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <link rel="stylesheet" href="../static/styles/home.css" />
   <link rel="stylesheet" href="../static/styles/nav.css" />
   <link rel="stylesheet" href="../static/styles/footer.css" />
-  <link rel="stylesheet" href="../static/styles/crud/crudPlates.css" />
+  <link rel="stylesheet" href="../static/styles/crud/crudEmploye.css" />
 
 </head>
 
@@ -30,34 +29,25 @@
     {% include './shared/nav.html' %}
   </header>
 
-  <main class="crud">
+  <main class="crud max-width">
     <div class="crud-container">
-      <table class="crud-table max-width">
-        <tr class="crud-table-top">
-          <th class="crud-table-item-top-idd">ID</th>
-          <th class="crud-table-item-top">Nombre</th>
-          <th class="crud-table-item-top">Apellido</th>
-          <th class="crud-table-item-top">cargo</th>
-          <th class="crud-table-item-top">saleario</th>
-          <th class="crud-table-item-top">Imagen</th>
-        </tr>
-        {%for empleado in empleados%}
-        <tr class="crud-table-info">
-          <td class="crud-table-item-id">{{empleado.id}}</td>
-          <td class="crud-table-item-nombree">{{empleado.nombre}}</td>
-          <td class="crud-table-item-nombree">{{empleado.apellido}}</td>
-          <td class="crud-table-item-nombree">{{empleado.cargo}}</td>
-          <td class="crud-table-item-nombree">{{empleado.salario}}</td>
-          <td class="crud-table-item"><img class="img-plato-crudd" src={{empleado.foto}} alt=""></td>
-          <td class="crud-table-item-absolutee"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16" id="svg">
-              <path
-                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-              <path fill-rule="evenodd"
-                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-            </svg></td>
-        </tr>
-        {%endfor%}
+      {%for empleado in empleados%}
+      <div class="crud-table-info-employe">
+        <p class="crud-table-item-employe-id">{{empleado.id}}</p>
+        <p class="crud-table-item-employe">{{empleado.nombre}}</p>
+        <p class="crud-table-item-employe">{{empleado.apellido}}</p>
+        <p class="crud-table-item-employe">{{empleado.cargo}}</p>
+        <p class="crud-table-item-employe-salary">${{empleado.salario}}</p>
+        <div class="crud-table-item"><img class="img-plato-crud" src={{empleado.foto}} alt=""></div>
+        <div class="crud-table-item-absolutee"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16" id="svg">
+            <path
+              d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+            <path fill-rule="evenodd"
+              d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+          </svg></div>
+      </div>
+      {%endfor%}
       </table>
       <div>
   </main>

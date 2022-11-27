@@ -1,15 +1,60 @@
 .crud {
-    margin-top: 120px;
+    margin-top: 90px;
 }
 
 .crud-table {
-    border: 2px solid rgb(172, 147, 100);
     width: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#delete-icon {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: rgb(149, 148, 148);
+}
+
+#delete-icon:hover {
+    width: 30px;
+    height: 30px;
+    color: rgb(80, 18, 18);
+    transition: all 0.6s ease;
+}
+
+
+.crud-table-item-id {
+    position: absolute;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+}
+
+.crud-table-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    -webkit-box-shadow: 0px 3px 18px 5px rgba(186, 180, 186, 1);
-    -moz-box-shadow: 0px 3px 18px 5px rgba(186, 180, 186, 1);
-    box-shadow: 0px 3px 18px 5px rgba(186, 180, 186, 1);
+    border: 1.5px solid rgb(172, 147, 100);
+    margin: 15px;
+    padding: 15px;
+    position: relative;
+    border-radius: 5px;
+}
+
+
+.crud-table-info:hover {
+    -webkit-box-shadow: 1px 3px 10px 1px rgb(177, 177, 177);
+    box-shadow: 1px 3px 10px 1px rgb(202, 202, 202);
+}
+
+.crud-table-info:nth-child(2n) {
+    margin-top: 90px;
 }
 
 .crud-table-top {
@@ -17,28 +62,19 @@
     color: white;
 }
 
-.crud-table-item-top {
-    width: 220px;
-    text-align: center;
-}
-
-.crud-table-item-topp {
-    width: 180px;
-}
-
-.crud-table-item-top-id {
-    width: 70px;
-}
-
-.crud-table-item-top-idd {
-    width: 120px;
-    margin-right: 5px;
-}
-
 .img-plato-crud {
-    width: 110px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     margin: 10px;
+    border: 2px solid rgb(172, 147, 100);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.img-plato-crud:hover {
+    width: 200px;
+    height: 200px;
+    transition: all 1s ease;
 }
 
 .img-plato-crudd {
@@ -49,10 +85,11 @@
 }
 
 .crud-table-item-id {
-    color: grey;
+    color: rgb(115, 114, 114);
 }
 
 .crud-table-item-nombre {
+    margin-top: 10px;
     font-size: 19px;
     color: rgb(144, 121, 78);
 }
@@ -63,11 +100,11 @@
 }
 
 .crud-table-item-descripcion {
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 80px;
     font-size: 15px;
     margin-right: 10px;
-    color: grey;
+    color: rgb(104, 104, 104);
 }
 
 .crud-table-item-absolutee {
@@ -78,9 +115,60 @@
     color: rgb(63, 63, 65);
 }
 
-#svg:hover {
+#svg {
+    margin-right: 5px;
+}
+
+.btn-edit:hover {
     cursor: pointer;
     color: rgb(16, 18, 134);
     transition: all 1s ease;
+}
 
+#svg:active {
+    transition: all 1s ease;
+}
+
+.form-input-edit {
+    width: 50px;
+    font-size: 15px;
+}
+
+.card-body {
+    width: 280px;
+    font-size: 15px;
+    height: 280px;
+    color: rgb(144, 121, 78);
+}
+
+.form-input-edit {
+    width: 100%;
+    padding: 2px;
+    margin: 0px;
+    text-align: center;
+    font-size: 14px;
+    border: 0.2px solid rgb(187, 185, 185);
+    color: gray;
+    outline: none;
+}
+
+.btn-edit {
+    margin: 10px;
+    font-size: 17px;
+    color: grey;
+    border: transparent;
+    display: flex;
+    align-items: center;
+}
+
+#btn-form {
+    background-color: rgb(144, 121, 78);
+    border: transparent;
+    padding: 5px;
+    color: white;
+}
+
+#btn-form:hover {
+    background-color: rgb(100, 78, 39);
+    transition: all 1s ease;
 }
