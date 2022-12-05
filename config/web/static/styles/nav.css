@@ -147,3 +147,30 @@
 #btn-close {
     background-color: rgb(250, 248, 248);
 }
+
+.btn-movile-nab {
+    background-color: transparent;
+    border: none;
+    color: rgb(181, 145, 86);
+    margin: 10px;
+}
+
+#movile-icon {
+    display: none;
+    width: 35px;
+    height: 35px;
+}
+
+@media (max-width: 515px) {
+
+    .nav-container-items {
+        display: none;
+    }
+
+    #movile-icon {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 30px;
+    }
+}

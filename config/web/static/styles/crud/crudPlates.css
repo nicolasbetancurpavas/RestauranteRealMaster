@@ -1,14 +1,20 @@
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
 .crud {
     margin-top: 90px;
 }
 
 .crud-table {
-    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 820px;
+    margin: auto;
 }
 
 #delete-icon {
@@ -171,4 +177,32 @@
 #btn-form:hover {
     background-color: rgb(100, 78, 39);
     transition: all 1s ease;
+}
+
+@media (max-width:800px) {
+
+    .crud {
+        margin-top: 120px;
+    }
+
+    .crud-table {
+        flex-direction: column;
+    }
+
+    .crud-table-info:nth-child(2n) {
+        margin-top: 5px;
+    }
+
+    .crud-table-info {
+        width: 280px;
+        margin-top: 15px;
+    }
+
+    .crud-table-item-descripcion {
+        width: 200px;
+        height: 100px;
+        font-size: 15px;
+        margin-right: 10px;
+        color: rgb(104, 104, 104);
+    }
 }

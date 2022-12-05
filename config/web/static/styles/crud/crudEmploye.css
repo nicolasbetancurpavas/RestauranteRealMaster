@@ -1,9 +1,18 @@
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
 .crud-table-info-employe {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding: 25px;
     color: gray;
     text-align: center;
+    -webkit-box-shadow: -2px 9px 11px -5px #C2C2C2;
+    box-shadow: -2px 9px 11px -5px #C2C2C2;
 }
 
 .crud-container {
@@ -22,18 +31,38 @@
 .crud-table-item-employe {
     width: 150px;
     margin: 0px;
+
 }
+
+
 
 .crud-table-item-employe-salary {
     width: 100px;
     margin-right: 20px;
-    color: rgb(50, 166, 50);
+    color: rgb(137, 114, 76);
+    font-weight: bold;
 }
 
 .crud-table-item-employe-id {
     width: 120px;
     margin: 0px;
     margin-right: 15px;
-    border-right: 2px solid rgb(133, 103, 71);
-    border-top: 2px solid rgb(133, 103, 71);
+}
+
+@media (max-width:770px) {
+    .crud-table-info-employe {
+        flex-direction: column;
+    }
+
+    .item-name {
+        display: flex;
+    }
+}
+
+@media (max-width:370px) {
+    .crud-table-info-employe {
+        width: 80%;
+        margin: auto;
+        flex-direction: column;
+    }
 }

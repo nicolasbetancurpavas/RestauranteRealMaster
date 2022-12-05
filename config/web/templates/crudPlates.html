@@ -19,6 +19,7 @@
 
   <link rel="stylesheet" href="../static/styles/home.css" />
   <link rel="stylesheet" href="../static/styles/nav.css" />
+  <link rel="stylesheet" href="../static/styles/navMovile/navMovile.css" />
   <link rel="stylesheet" href="../static/styles/footer.css" />
   <link rel="stylesheet" href="../static/styles/crud/crudPlates.css" />
 
@@ -35,9 +36,9 @@
   {% endif %}
 
   <main class="crud">
-    <div class="crud-table max-width">
+    <div class="crud-table">
       {%for plato in platos%}
-      <div class="crud-table-info">
+      <div class="crud-table-info animate__animated animate__backInDown animate__slow">
         <p class="crud-table-item-id">{{plato.id}}</p>
         <svg id="delete-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
           class="bi bi-trash3" viewBox="0 0 16 16">
@@ -73,7 +74,7 @@
     </div>
   </main>
 
-  <footer class="footer-plates">
+  <footer class="footer">
     {% include './shared/footer.html' %}
   </footer>
 

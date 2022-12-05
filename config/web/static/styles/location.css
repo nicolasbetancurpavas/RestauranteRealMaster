@@ -1,4 +1,6 @@
 .location {
+    max-width: 850px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,4 +38,27 @@
     box-shadow: 1px 2px 1px 1px rgb(207, 205, 205);
     transition: all 0.5s ease;
     background-color: rgb(76, 58, 30);
+}
+
+#map {
+    width: 350px;
+    height: 350px;
+}
+
+@media (max-width:535px) {
+    .location {
+        max-width: 320px;
+        display: block;
+        margin: auto;
+    }
+
+    #map {
+        margin-top: 30px;
+        width: 310px;
+        height: 310px;
+    }
+
+    .location-maps {
+        margin: auto;
+    }
 }

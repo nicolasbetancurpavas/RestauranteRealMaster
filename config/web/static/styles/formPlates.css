@@ -26,7 +26,7 @@
 
 .form-plates-title {
     color: rgb(169, 148, 102);
-    font-size:30px;
+    font-size: 30px;
 }
 
 .form-inputs {
@@ -64,4 +64,15 @@
 
 .swal2-popup .swal2-modal .swal2-show {
     background-color: black;
+}
+
+@media (max-width:750px) {
+    .form-plates-title {
+        font-size: 26px;
+    }
+
+    .form-plates {
+        left: 0%;
+        width: 100%;
+    }
 }

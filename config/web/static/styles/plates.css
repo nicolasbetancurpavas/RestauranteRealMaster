@@ -9,7 +9,7 @@
 }
 
 .plates-items {
-    width: 33%;
+    width: 250px;
 }
 
 .plates-img {
@@ -26,4 +26,26 @@
 .plates-text:hover {
     width: 55%;
     transition: all 0.5s ease-out;
+}
+
+@media (max-width:750px) {
+
+    .plates-container {
+        margin: 10px;
+        margin-top: 70px;
+    }
+
+    .plates-items {
+        margin-bottom: 15px;
+    }
+
+    .plates-text {
+        border-bottom: 1px solid rgb(181, 145, 86);
+        color: rgb(120, 94, 52);
+        width: 80%;
+    }
+
+    .plates-img {
+        width: 80%;
+    }
 }

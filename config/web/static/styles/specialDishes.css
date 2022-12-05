@@ -20,6 +20,7 @@
 
 .especial-item-img {
     width: 80%;
+
 }
 
 .especial-item-img:hover {
@@ -59,4 +60,15 @@
     background-color: rgb(235, 235, 235);
     opacity: 0.4;
     z-index: -1;
+}
+
+@media (max-width:500px) {
+    .especial-item-img {
+        width: 100%;
+    }
+
+    .especial-item-img:hover {
+        width: 100%;
+        z-index: 3;
+    }
 }

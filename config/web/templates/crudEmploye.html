@@ -19,6 +19,7 @@
 
   <link rel="stylesheet" href="../static/styles/home.css" />
   <link rel="stylesheet" href="../static/styles/nav.css" />
+  <link rel="stylesheet" href="../static/styles/navMovile/navMovile.css" />
   <link rel="stylesheet" href="../static/styles/footer.css" />
   <link rel="stylesheet" href="../static/styles/crud/crudEmploye.css" />
 
@@ -29,13 +30,15 @@
     {% include './shared/nav.html' %}
   </header>
 
-  <main class="crud max-width">
+  <main class="crud">
     <div class="crud-container">
       {%for empleado in empleados%}
       <div class="crud-table-info-employe">
         <p class="crud-table-item-employe-id">{{empleado.id}}</p>
-        <p class="crud-table-item-employe">{{empleado.nombre}}</p>
-        <p class="crud-table-item-employe">{{empleado.apellido}}</p>
+        <div class="item-name">
+          <p class="crud-table-item-employe">{{empleado.nombre}}</p>
+          <p class="crud-table-item-employe">{{empleado.apellido}}</p>
+        </div>
         <p class="crud-table-item-employe">{{empleado.cargo}}</p>
         <p class="crud-table-item-employe-salary">${{empleado.salario}}</p>
         <div class="crud-table-item"><img class="img-plato-crud" src={{empleado.foto}} alt=""></div>
@@ -52,7 +55,7 @@
       <div>
   </main>
 
-  <footer class="footer-plates">
+  <footer class="footer">
     {% include './shared/footer.html' %}
   </footer>
 

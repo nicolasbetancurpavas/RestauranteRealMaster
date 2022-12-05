@@ -1,4 +1,6 @@
 .follow {
+    max-width: 850px;
+    margin: auto;
     margin-top: 70px;
     margin-bottom: 60px;
     display: flex;
@@ -8,6 +10,7 @@
 .folllow-img {
     width: 310px;
     height: 400px;
+    margin-left: 30px;
     -webkit-box-shadow: -1px 5px 5px 0px rgba(194, 188, 194, 1);
     -moz-box-shadow: -1px 5px 5px 0px rgba(194, 188, 194, 1);
     box-shadow: -1px 5px 5px 0px rgba(194, 188, 194, 1);
@@ -60,4 +63,25 @@
     transition: all 0.6s ease;
     width: 35px;
     height: 35px;
+}
+
+@media (max-width:700px) {
+    .follow {
+        display: block;
+    }
+
+    .follow-container-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .folllow-img {
+        width: 220px;
+        height: 300px;
+    }
+
+    .follow-info-title {
+        margin-top: 5px;
+    }
+
 }

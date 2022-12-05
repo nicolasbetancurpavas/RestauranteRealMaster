@@ -64,3 +64,20 @@
     background-color: rgb(108, 92, 57);
     transition: all 0.5s ease;
 }
+
+@media (max-height:800px) {
+    .form-container {
+        border: none;
+    }
+
+    .form-employee {
+        height: 80%;
+    }
+}
+
+@media (max-width:750px) {
+    .form-employee {
+        width: 100%;
+        left: 0%;
+    }
+}
