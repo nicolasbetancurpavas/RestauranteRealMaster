@@ -5,7 +5,7 @@
         <p>Url patters,archivo views (Controlador) logica de negocio </p>
         <p>Habilidades en los templates, HTML,CSS(resposive desing) animaciones,bootstrap</p>
         <p>conexion MYSQL</p>
-        <p>agregar, adminitrar (editar,eliminar) tanto platos como empleados</p>
+        <p>agregar, administrar (editar,eliminar) tanto platos como empleados</p>
 </div>
 <br>
  <img src="https://firebasestorage.googleapis.com/v0/b/imagenes-1ccc1.appspot.com/o/desktop.png?alt=media&token=894f24df-8583-4b70-bd17-71652e751597" width="100%"  height="100%">
