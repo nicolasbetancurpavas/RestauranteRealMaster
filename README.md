@@ -3,7 +3,7 @@
         <p>El uso de Python y su framework Django</p>
         <p>Formularios generados con Python</p>
         <p>Url patters,archivo views (Controlador) logica de negocio </p>
-        <p>Habilidades en los templates, HTML,CSS(resposive desing),bootstrap</p>
+        <p>Habilidades en los templates, HTML,CSS(resposive desing) animaciones,bootstrap</p>
         <p>conexion MYSQL</p>
         <p>agregar, adminitrar (editar,eliminar) tanto platos como empleados</p>
 </div>
