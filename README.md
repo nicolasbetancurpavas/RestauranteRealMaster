@@ -1,4 +1,4 @@
-<p>no seas ansioso ya cargar<p>
+<p>No seas ansioso ya cargara!!<p>
 <div>
         <h2>Restaurante RealMaster Objectivos</h2>
         <p>El uso de Python y su framework Django</p>
