@@ -6,7 +6,7 @@
         <p>Url patters,archivo views (Controlador) logica de negocio </p>
         <p>Habilidades en los templates, HTML,CSS(resposive desing) animaciones,bootstrap</p>
         <p>conexion MYSQL</p>
-        <p>agregar, administrar (editar,eliminar) tanto platos como empleados</p>
+        <p>agregar, administrar (Agregar,editar,eliminar) tanto platos como empleados</p>
 </div>
 <br>
 <h3>Recomiendo dar click en las imagenes para una mejor vista<h3/>
