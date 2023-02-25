@@ -1,5 +1,6 @@
+  <h2> Restaurante RealMaster Objectivos</h2>
 <div>
-        <h2> Restaurante RealMaster Objectivos</h2>
+<h3>Objectivos</h3>
         <p> ✔ administrar (Agregar,editar,eliminar) tanto platos como empleados y visualizar servicios Restaurante</p> 
         <p> ✔ El uso de Python y su framework Django conexion MYSQL</p>
         <p> ✔ Formularios generados con Python</p>
