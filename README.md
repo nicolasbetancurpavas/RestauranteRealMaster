@@ -1,4 +1,4 @@
-# Restaurante RealMaster - Objetivos
+# Restaurante RealMaster
 ## Objetivos
 El objetivo de este proyecto es crear una aplicación web para la gestión de un restaurante, permitiendo a los usuarios (administradores del restaurante) administrar tanto los platos como los empleados.
 los usuario podran visualizar los servicios ofrecidos por el restaurante.
