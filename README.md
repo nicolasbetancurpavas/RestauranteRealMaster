@@ -5,13 +5,13 @@ los usuario podran visualizar los servicios ofrecidos por el restaurante.
 
 Este proyecto se ha desarrollado utilizando las siguientes tecnologías y habilidades:
 
-Python y su framework Django para la lógica de programación.
-Conexión con base de datos MySQL.
-Generación de formularios con Python.
-Definición de patrones de URL y vistas (controlador).
-Habilidades en la creación de plantillas utilizando HTML, CSS (diseño responsive), animaciones y Bootstrap.
-Demo
-Para ver una demostración del proyecto, por favor sigue el siguiente enlace: VER DEMO.
+- Python y su framework Django para la lógica de programación.
+- Conexión con base de datos MySQL.
+- Generación de formularios con Python.
+- Definición de patrones de URL y vistas (controlador).
+- Habilidades en la creación de plantillas utilizando HTML, CSS (diseño responsive), animaciones y Bootstrap
+
+### [VER DEMO](https://firebasestorage.googleapis.com/v0/b/imagenes-1ccc1.appspot.com/o/media%2FV%C3%ADdeo%20sin%20t%C3%ADtulo%20%E2%80%90%20Hecho%20con%20Clipchamp.mp4?alt=media&token=55105de5-24ab-4631-a94d-00b7a192a45b)
 
 Instalación
 Para instalar y ejecutar el proyecto localmente, siga estos pasos:
@@ -34,6 +34,5 @@ Abra una solicitud de extracción (Pull Request).
 Licencia
 Este proyecto está licenciado bajo la Licencia MIT. Consulte el archivo LICENSE para obtener más detalles.
 
-### [VER DEMO](https://firebasestorage.googleapis.com/v0/b/imagenes-1ccc1.appspot.com/o/media%2FV%C3%ADdeo%20sin%20t%C3%ADtulo%20%E2%80%90%20Hecho%20con%20Clipchamp.mp4?alt=media&token=55105de5-24ab-4631-a94d-00b7a192a45b)
 
 
